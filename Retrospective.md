@@ -1,7 +1,7 @@
 # Retrospective
 
-- name: Jane Doe
-- email: janedoe@u.boisestate.edu
+- name: Zixi Zhao
+- email: zixizhao@u.boisestate.edu
 
 ## Instructions
 
@@ -21,7 +21,7 @@ Be safe CITE!
 
 ## Experience
 
-TODO
+
 
 ## Known issues or Bugs
 
@@ -29,4 +29,4 @@ TODO
 
 ## Sources used
 
-TODO
+Lab10,ZyBooks,Google
