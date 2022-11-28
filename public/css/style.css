@@ -6,3 +6,52 @@ body {
 a {
   color: #00B7FF;
 }
+
+html {
+  background-color: #fffaee;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.photocontainer {
+  border:1px solid black;
+  border-radius: 10px;
+}
+
+.container {
+  display: table;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border:1px solid black;
+  border-radius: 10px;
+}
+
+.postblock{
+  border:1px solid black;
+
+}
+
+.usernameblock { 
+  font-size: 24px;
+  border-width: 1px;
+  width: relative;
+}
+
+
+.blogposts{ 
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border:1px solid black;
+  border-radius: 10px;
+  justify-content: center;
+}
+
