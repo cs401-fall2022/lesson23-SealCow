@@ -6,22 +6,28 @@
         <title>{{title}}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+
+        <link rel="stylesheet" href="/css/style.css" />
     </head>
+    
     <body>
         <h1>Welcome to my blog</h1>
-        
+
+        <h3 id="new">New Blog</h3>
+        <div class="add">
         <ul>
             {% for txt in data%}
             <ul>{{txt.blog_id}} - {{txt.blog_txt}}  </ul>
             {% endfor%}
         </ul>
+        </div>
+
 
         <hr>
-        <h2>Add stuff</h2>
+        <h2>Add Blog</h2>
         <form action="/add" method="POST">
             <div>
-                <label for="blog">What is your blog txt?</label>
+                <label for="blog">New Blog Entry</label>
                 <input name="blog" id="blog" value="Hi this is my blog text!" />
             </div>
             <div>
@@ -29,10 +35,10 @@
             </div>
         </form>
         <hr>
-        <h2>Delete stuff</h2>
+        <h2>Delete blog</h2>
                 <form action="/delete" method="POST">
             <div>
-                <label for="blog">Blog to delete?</label>
+                <label for="blog">Blog to delete:</label>
                 <input name="blog" id="blog" value="1" />
             </div>
             <div>
