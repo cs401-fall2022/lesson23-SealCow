@@ -40,7 +40,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/add', (req, res, next) => {
-  console.log("Adding blog to table without sanitizing input! YOLO BABY!!");
+  //console.log("Adding blog to table without sanitizing input! YOLO BABY!!");
   var db = new sqlite3.Database('mydb.sqlite3',
     sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE,
     (err) => {
