@@ -12,8 +12,11 @@
     
     <body>
         <h1>Welcome to my blog</h1>
+         <p>This is a new blog site.<p>
+        <h3 id="new">New blog post here:</h3>
 
-        <h3 id="new">New Blog</h3>
+       
+        
         <div class="add">
         <ul>
             {% for txt in data%}
@@ -24,11 +27,11 @@
 
 
         <hr>
-        <h2>Add Blog</h2>
+        <h2>Add new blog here:</h2>
         <form action="/add" method="POST">
             <div>
-                <label for="blog">New Blog Entry</label>
-                <input name="blog" id="blog" value="Hi this is my blog text!" />
+                <label for="blog">New Blog Entry:</label>
+                <input name="blog" id="blog" value="" />
             </div>
             <div>
                 <button>Create a new blog</button>
@@ -38,8 +41,8 @@
         <h2>Delete blog</h2>
                 <form action="/delete" method="POST">
             <div>
-                <label for="blog">Blog to delete:</label>
-                <input name="blog" id="blog" value="1" />
+                <label for="blog">Enter blog number:</label>
+                <input name="blog" id="blog" value="" />
             </div>
             <div>
                 <button>Delete blog posts</button>
