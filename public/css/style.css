@@ -1,57 +1,20 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: black;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/stock-photo-this-is-the-end-78456327.jpeg");
 }
 
 a {
   color: #00B7FF;
 }
 
-html {
-  background-color: #fffaee;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-.photocontainer {
-  border:1px solid black;
-  border-radius: 10px;
-}
-
-.container {
-  display: table;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  border:1px solid black;
-  border-radius: 10px;
-}
-
-.postblock{
-  border:1px solid black;
-
-}
-
-.usernameblock { 
-  font-size: 24px;
-  border-width: 1px;
-  width: relative;
+.page{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-.blogposts{ 
-  display: flex;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  border:1px solid black;
-  border-radius: 10px;
-  justify-content: center;
-}
 
