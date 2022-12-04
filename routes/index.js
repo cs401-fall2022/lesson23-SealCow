@@ -25,7 +25,6 @@ router.get('/', function (req, res, next) {
             db.exec(`create table blog (
                      blog_id INTEGER PRIMARY KEY AUTOINCREMENT,
                      blog_txt text NOT NULL);
-
                       insert into blog (blog_txt)
                       values ('This is a great blog'),
                              ('Oh my goodness blogging is fun');`,
@@ -60,6 +59,25 @@ router.post('/add', (req, res, next) => {
     }
   );
 })
+
+//edit here
+router.post('/edit', (req, res, next) => {
+  console.log("editing post contents");
+  var db = new sqlite3.Database('mydb.sqlite3',
+  sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE,
+  (err) => {
+    if (err) {
+      console.log("Getting error " + err);
+      exit(1);
+    }
+    console.log("Updating post: " + req.body.blog_id  + " New Content: " + req.body.content);
+    db.exec(`update posts set blog_txt = '${req.body.content}' where blog_id=${req.body.blog_id}`)
+    //redirect to homepage
+    res.redirect('/');
+  }
+);
+})
+
 
 router.post('/delete', (req, res, next) => {
   console.log("deleting stuff without checking if it is valid! SEND IT!");
