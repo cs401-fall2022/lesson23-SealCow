@@ -70,8 +70,8 @@ router.post('/edit', (req, res, next) => {
       console.log("Getting error " + err);
       exit(1);
     }
-    console.log("Updating post: " + req.body.blog_id  + " New Content: " + req.body.content);
-    db.exec(`update posts set blog_txt = '${req.body.txt}' where blog_id=${req.body.blog_id}`)
+    console.log("Updating post: " + req.body.blog  + " New Content: " + req.body.content);
+    db.exec(`update posts set blog_txt = '${req.body.txt}' where blog_id=${req.body.blog}`)
     //redirect to homepage
     res.redirect('/');
   }
